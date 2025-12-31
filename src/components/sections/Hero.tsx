@@ -13,7 +13,7 @@ const Hero = () => {
         {/* Logo */}
         <div className="animate-fade-up mb-8">
           <img 
-            src="https://i.imgur.com/Ty2DaYT.png" 
+            src="https://i.imgur.com/L73RkZr.png" 
             alt="CASUAL Logo" 
             className="w-32 h-32 md:w-40 md:h-40 mx-auto animate-float rounded-full shadow-2xl"
           />

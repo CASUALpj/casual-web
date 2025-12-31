@@ -6,7 +6,7 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img 
-            src="https://i.imgur.com/Ty2DaYT.png" 
+            src="https://i.imgur.com/L73RkZr.png" 
             alt="CASUAL" 
             className="w-10 h-10 rounded-full"
           />
