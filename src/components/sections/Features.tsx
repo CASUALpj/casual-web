@@ -28,7 +28,7 @@ const Features = () => {
     <section id="features" className="py-24 px-6 bg-card/50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-gradient-gold mb-6">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-gradient-kraft mb-6">
             Key Features
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />

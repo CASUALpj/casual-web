@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-gradient-gold mb-6">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-gradient-kraft mb-6">
             What is CASUAL?
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
