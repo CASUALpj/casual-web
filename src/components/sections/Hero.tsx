@@ -13,14 +13,14 @@ const Hero = () => {
         {/* Logo */}
         <div className="animate-fade-up mb-8">
           <img 
-            src="https://i.imgur.com/vqi6v9J.png" 
+            src="https://i.imgur.com/Ty2DaYT.png" 
             alt="CASUAL Logo" 
-            className="w-32 h-32 md:w-40 md:h-40 mx-auto animate-float"
+            className="w-32 h-32 md:w-40 md:h-40 mx-auto animate-float rounded-full shadow-2xl"
           />
         </div>
 
         {/* Brand name */}
-        <h1 className="animate-fade-up-delay-1 font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider text-gradient-gold mb-6">
+        <h1 className="animate-fade-up-delay-1 font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider text-gradient-kraft mb-6">
           CASUAL
         </h1>
 

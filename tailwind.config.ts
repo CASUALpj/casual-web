@@ -51,13 +51,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        wood: {
-          grain: "hsl(var(--wood-grain))",
-          light: "hsl(var(--wood-light))",
+        kraft: {
+          DEFAULT: "hsl(var(--kraft))",
+          dark: "hsl(var(--kraft-dark))",
         },
-        gold: {
-          glow: "hsl(var(--gold-glow))",
-        },
+        charcoal: "hsl(var(--charcoal))",
         cream: "hsl(var(--cream))",
       },
       borderRadius: {
@@ -75,8 +73,8 @@ export default {
           to: { height: "0" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(38 80% 55% / 0.4)" },
-          "50%": { boxShadow: "0 0 40px hsl(38 80% 55% / 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(32 45% 60% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsl(32 45% 60% / 0.5)" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0)" },

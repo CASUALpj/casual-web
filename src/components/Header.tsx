@@ -6,11 +6,11 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img 
-            src="https://i.imgur.com/vqi6v9J.png" 
+            src="https://i.imgur.com/Ty2DaYT.png" 
             alt="CASUAL" 
-            className="w-10 h-10"
+            className="w-10 h-10 rounded-full"
           />
-          <span className="font-display text-xl font-bold text-gradient-gold">CASUAL</span>
+          <span className="font-display text-xl font-bold text-gradient-kraft">CASUAL</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8">

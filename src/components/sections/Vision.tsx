@@ -14,7 +14,7 @@ const Vision = () => {
               <Sparkles className="w-10 h-10 text-primary" />
             </div>
 
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-gradient-gold mb-8">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-gradient-kraft mb-8">
               Our Vision
             </h2>
 
