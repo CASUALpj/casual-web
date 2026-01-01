@@ -37,33 +37,30 @@ const Header = () => {
           </a>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 mr-2">
           <a
             href="https://t.me/theCASUALofficial"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors duration-300"
+            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
           >
-            <TelegramIcon className="w-4 h-4" />
-            <span className="hidden sm:inline">Telegram</span>
+            <TelegramIcon className="w-3.5 h-3.5" />
           </a>
           <a
             href="https://discord.gg/t7rzguPJmF"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors duration-300"
+            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
           >
-            <DiscordIcon className="w-4 h-4" />
-            <span className="hidden sm:inline">Discord</span>
+            <DiscordIcon className="w-3.5 h-3.5" />
           </a>
           <a
             href="https://x.com/casualpj"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors duration-300"
+            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
           >
-            <Twitter className="w-4 h-4" />
-            <span className="hidden sm:inline">Follow</span>
+            <Twitter className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
