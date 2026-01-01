@@ -1,4 +1,4 @@
-import { Twitter, ArrowRight } from "lucide-react";
+import { Gamepad2, ArrowRight } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -12,13 +12,13 @@ const CTA = () => {
         </p>
 
         <a
-          href="https://x.com/casualpj"
+          href="https://casual-gamefi.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-4 px-10 py-5 bg-primary text-primary-foreground font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
         >
-          <Twitter className="w-6 h-6" />
-          Follow on X
+          <Gamepad2 className="w-6 h-6" />
+          Beta Test
           <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
         </a>
       </div>
