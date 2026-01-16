@@ -15,7 +15,7 @@ const CTA = () => {
           href="https://casual-gamefi.lovable.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group inline-flex items-center gap-4 px-10 py-5 bg-primary text-primary-foreground font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105 shadow-[0_0_20px_hsl(var(--primary)/0.5)]"
+          className="streamline-glow group inline-flex items-center gap-4 px-10 py-5 bg-primary text-primary-foreground font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105"
         >
           <Gamepad2 className="w-6 h-6" />
           Beta Test
