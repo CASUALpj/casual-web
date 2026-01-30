@@ -11,7 +11,7 @@ const About = () => {
 
         <div className="space-y-8 text-lg md:text-xl leading-relaxed text-foreground/90">
           <p className="text-center">
-            <span className="text-primary font-semibold">CASUAL</span> is a next-generation GameFi ecosystem designed to empower gamers to make profit off their time, skill and dedication. We're building a vibrant gaming environment where players can have fun, compete and profit while doing what they love — <span className="text-primary font-medium">Playing Games</span>.
+            <span className="text-primary font-semibold">CASUAL</span> is a different approach to the GameFi ecosystem designed to empower gamers to make profit off their time, skill and dedication. We're building a vibrant gaming environment where players can have fun, compete and profit while doing what they love — <span className="text-primary font-medium">Playing Games</span>.
           </p>
 
           <p className="text-center">
