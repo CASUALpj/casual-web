@@ -3,7 +3,7 @@ import { Gamepad2, Coins, Users, Shield } from "lucide-react";
 const features = [
   {
     icon: Gamepad2,
-    title: "Web2 Games, Web3 Rewards",
+    title: "Classic Games, Web3 Rewards",
     description: "Play familiar games you love while earning blockchain-powered rewards and assets."
   },
   {
