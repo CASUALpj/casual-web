@@ -26,7 +26,7 @@ const Hero = () => {
 
         {/* Tagline */}
         <p className="animate-fade-up-delay-2 font-display text-lg md:text-xl lg:text-2xl text-primary tracking-wide mb-8">
-          Bridging the gap between Web2 games and Web3 ownership.
+          THE WEB3 GAMING PLATFORM FOR ALL
         </p>
 
         {/* CTA Button */}
