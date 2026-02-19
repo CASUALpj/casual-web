@@ -9,7 +9,7 @@ const features = [
   {
     icon: Coins,
     title: "Tokenized Economy",
-    description: "Profit from your time and skill through our sustainable play-to-earn ecosystem."
+    description: "Players can trade assets and interact with features through the use of tokens."
   },
   {
     icon: Users,
