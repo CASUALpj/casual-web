@@ -73,7 +73,7 @@ const Header = () => {
           </a>
           <a
             href="mailto:casualproject01@gmail.com"
-            className="p-2 hover:bg-primary/10 rounded-lg transition-colors duration-300"
+            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
           >
             <GoogleIcon className="w-3.5 h-3.5" />
           </a>
