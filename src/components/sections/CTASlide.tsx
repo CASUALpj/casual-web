@@ -12,7 +12,7 @@ const CTASlide = () => {
         </p>
 
         <a
-          href="https://casual-gamefi.lovable.app/"
+          href="https://casual-gamefi.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="streamline-glow group inline-flex items-center gap-4 px-10 py-5 bg-primary text-primary-foreground font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105"
