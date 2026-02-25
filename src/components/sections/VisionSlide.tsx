@@ -23,9 +23,9 @@ const VisionSlide = () => {
             </p>
 
             <div className="mt-10 pt-8 border-t border-primary/10">
-              <h3 className="font-display text-xl md:text-2xl font-semibold text-gradient-kraft mb-4">Our Mission</h3>
-              <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                To create an open, engaging ecosystem where every gamer — from casual players to competitive pros — can connect, play, and grow within a sustainable, player-driven economy.
+              <h3 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-kraft mb-8">Our Mission</h3>
+              <p className="text-xl md:text-2xl leading-relaxed text-foreground/90">
+                To create an open, engaging ecosystem where every gamer — from casual players to competitive pros — can connect, play, and grow within a <span className="text-primary font-semibold">sustainable, player-driven economy</span>.
               </p>
             </div>
           </div>
