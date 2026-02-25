@@ -18,7 +18,7 @@ const CTASlide = () => {
           className="streamline-glow group inline-flex items-center gap-4 px-10 py-5 bg-primary text-primary-foreground font-bold text-lg rounded-xl transition-all duration-300 hover:scale-105"
         >
           <Gamepad2 className="w-6 h-6" />
-          Beta Test
+          Dive In
           <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
         </a>
       </div>
