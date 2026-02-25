@@ -18,9 +18,6 @@ const About = () => {
             At CASUAL, we bridge the gap between Web2 and Web3 by integrating familiar, easy-to-play Classic games with blockchain-powered systems. This approach attracts everyday gamers and gradually introduces them to the world of tokenized rewards, NFT assets, and on-chain progression without the usual complexity of crypto.
           </p>
 
-          <p className="text-center text-muted-foreground">
-            Our mission is to create an open, engaging ecosystem where every gamer — from casual players to competitive pros — can connect, play, and grow within a sustainable, player-driven economy.
-          </p>
         </div>
       </div>
     </section>
