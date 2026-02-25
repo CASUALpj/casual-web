@@ -46,7 +46,7 @@ const Header = () => {
           </a>
         </nav>
 
-        <div className="flex items-center gap-2 mr-2">
+        <div className="flex items-center gap-2">
           <a
             href="https://t.me/theCASUALofficial"
             target="_blank"
