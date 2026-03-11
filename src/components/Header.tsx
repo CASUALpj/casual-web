@@ -27,7 +27,7 @@ const SECTIONS = [
   { label: "Intro", index: 0, path: null },
   { label: "Join Us", index: 4, path: null },
   { label: "One Pager", index: null, path: "/one-pager" },
-  { label: "Others", index: null, path: null },
+  { label: "Player Guide", index: null, path: "/guide" },
 ];
 
 interface HeaderProps {
