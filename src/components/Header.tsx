@@ -24,10 +24,9 @@ const TelegramIcon = ({ className }: { className?: string }) => (
 
 const SECTIONS = [
   { label: "Intro", index: 0 },
-  { label: "About", index: 1 },
-  { label: "Features", index: 2 },
-  { label: "Vision", index: 3 },
-  { label: "Join Us", index: 4 },
+  { label: "Features", index: 1 },
+  { label: "Vision", index: 2 },
+  { label: "Join Us", index: 3 },
 ];
 
 interface HeaderProps {
