@@ -1,4 +1,5 @@
-import { Twitter } from "lucide-react";
+import { Twitter, ChevronDown } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 
 const GoogleIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -21,60 +22,87 @@ const TelegramIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const Header = () => {
+const SECTIONS = [
+  { label: "Intro", index: 0 },
+  { label: "About", index: 1 },
+  { label: "Features", index: 2 },
+  { label: "Vision", index: 3 },
+  { label: "Join Us", index: 4 },
+];
+
+interface HeaderProps {
+  currentSlide?: number;
+  onNavigate?: (index: number) => void;
+}
+
+const Header = ({ currentSlide = 0, onNavigate }: HeaderProps) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img 
-            src="https://i.imgur.com/L73RkZr.png" 
-            alt="CASUAL" 
-            className="w-10 h-10 rounded-full"
-          />
-          <span className="font-display text-xl font-bold text-gradient-kraft">CASUAL</span>
+        {/* Logo + Section Dropdown */}
+        <div className="relative" ref={menuRef}>
+          <button
+            onClick={() => setMenuOpen((v) => !v)}
+            className="flex items-center gap-2 group cursor-pointer focus:outline-none"
+            aria-label="Navigate sections"
+          >
+            <img 
+              src="https://i.imgur.com/L73RkZr.png" 
+              alt="CASUAL" 
+              className="w-10 h-10 rounded-full transition-transform duration-200 group-hover:scale-110"
+            />
+            <span className="font-display text-xl font-bold text-gradient-kraft">CASUAL</span>
+            <ChevronDown className={`w-4 h-4 text-primary transition-transform duration-200 ${menuOpen ? "rotate-180" : ""}`} />
+          </button>
+
+          {/* Dropdown */}
+          {menuOpen && (
+            <div className="absolute top-full left-0 mt-2 w-48 bg-background/95 backdrop-blur-md border border-border rounded-lg shadow-xl overflow-hidden animate-fade-up">
+              {SECTIONS.map((section) => (
+                <button
+                  key={section.index}
+                  onClick={() => {
+                    onNavigate?.(section.index);
+                    setMenuOpen(false);
+                  }}
+                  className={`w-full text-left px-4 py-3 text-sm transition-colors duration-200 flex items-center gap-3 ${
+                    currentSlide === section.index
+                      ? "bg-primary/10 text-primary font-semibold"
+                      : "text-muted-foreground hover:bg-primary/5 hover:text-primary"
+                  }`}
+                >
+                  <span className={`w-1.5 h-1.5 rounded-full ${currentSlide === section.index ? "bg-primary" : "bg-muted-foreground/30"}`} />
+                  {section.label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-            About
-          </a>
-          <a href="#features" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-            Features
-          </a>
-          <a href="#vision" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-            Vision
-          </a>
-        </nav>
-
         <div className="flex items-center gap-2">
-          <a
-            href="https://t.me/theCASUALofficial"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
-          >
+          <a href="https://t.me/theCASUALofficial" target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300">
             <TelegramIcon className="w-3.5 h-3.5" />
           </a>
-          <a
-            href="https://discord.gg/t7rzguPJmF"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
-          >
+          <a href="https://discord.gg/t7rzguPJmF" target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300">
             <DiscordIcon className="w-3.5 h-3.5" />
           </a>
-          <a
-            href="https://x.com/casualpj"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
-          >
+          <a href="https://x.com/casualpj" target="_blank" rel="noopener noreferrer" className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300">
             <Twitter className="w-3.5 h-3.5" />
           </a>
-          <a
-            href="mailto:casualproject01@gmail.com"
-            className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300"
-          >
+          <a href="mailto:casualproject01@gmail.com" className="p-2 text-primary hover:bg-primary/10 rounded-lg transition-colors duration-300">
             <GoogleIcon className="w-3.5 h-3.5" />
           </a>
         </div>

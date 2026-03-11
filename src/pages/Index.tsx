@@ -40,7 +40,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header currentSlide={currentSlide} onNavigate={setCurrentSlide} />
       <main className="relative">
         {/* Show navigation arrows only after first slide */}
         {currentSlide > 0 && (
