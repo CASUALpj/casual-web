@@ -24,10 +24,9 @@ const TelegramIcon = ({ className }: { className?: string }) => (
 
 const SECTIONS = [
   { label: "Intro", index: 0 },
-  { label: "About", index: 1 },
-  { label: "Features", index: 2 },
-  { label: "Vision", index: 3 },
   { label: "Join Us", index: 4 },
+  { label: "One Page", index: null },
+  { label: "Others", index: null },
 ];
 
 interface HeaderProps {
@@ -73,18 +72,22 @@ const Header = ({ currentSlide = 0, onNavigate }: HeaderProps) => {
             <div className="absolute top-full left-0 mt-2 w-48 bg-background/95 backdrop-blur-md border border-border rounded-lg shadow-xl overflow-hidden animate-fade-up">
               {SECTIONS.map((section) => (
                 <button
-                  key={section.index}
+                  key={section.label}
                   onClick={() => {
-                    onNavigate?.(section.index);
+                    if (section.index !== null) {
+                      onNavigate?.(section.index);
+                    }
                     setMenuOpen(false);
                   }}
                   className={`w-full text-left px-4 py-3 text-sm transition-colors duration-200 flex items-center gap-3 ${
-                    currentSlide === section.index
+                    section.index !== null && currentSlide === section.index
                       ? "bg-primary/10 text-primary font-semibold"
-                      : "text-muted-foreground hover:bg-primary/5 hover:text-primary"
+                      : section.index === null
+                        ? "text-muted-foreground/50 cursor-default"
+                        : "text-muted-foreground hover:bg-primary/5 hover:text-primary"
                   }`}
                 >
-                  <span className={`w-1.5 h-1.5 rounded-full ${currentSlide === section.index ? "bg-primary" : "bg-muted-foreground/30"}`} />
+                  <span className={`w-1.5 h-1.5 rounded-full ${section.index !== null && currentSlide === section.index ? "bg-primary" : "bg-muted-foreground/30"}`} />
                   {section.label}
                 </button>
               ))}
