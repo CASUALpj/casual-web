@@ -1,5 +1,6 @@
 import { Twitter, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const GoogleIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -23,10 +24,10 @@ const TelegramIcon = ({ className }: { className?: string }) => (
 );
 
 const SECTIONS = [
-  { label: "Intro", index: 0 },
-  { label: "Join Us", index: 4 },
-  { label: "One Page", index: null },
-  { label: "Others", index: null },
+  { label: "Intro", index: 0, path: null },
+  { label: "Join Us", index: 4, path: null },
+  { label: "One Page", index: null, path: "/one-pager" },
+  { label: "Others", index: null, path: null },
 ];
 
 interface HeaderProps {
@@ -37,6 +38,8 @@ interface HeaderProps {
 const Header = ({ currentSlide = 0, onNavigate }: HeaderProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -70,27 +73,39 @@ const Header = ({ currentSlide = 0, onNavigate }: HeaderProps) => {
           {/* Dropdown */}
           {menuOpen && (
             <div className="absolute top-full left-0 mt-2 w-48 bg-background/95 backdrop-blur-md border border-border rounded-lg shadow-xl overflow-hidden animate-fade-up">
-              {SECTIONS.map((section) => (
-                <button
-                  key={section.label}
-                  onClick={() => {
-                    if (section.index !== null) {
-                      onNavigate?.(section.index);
-                    }
-                    setMenuOpen(false);
-                  }}
-                  className={`w-full text-left px-4 py-3 text-sm transition-colors duration-200 flex items-center gap-3 ${
-                    section.index !== null && currentSlide === section.index
-                      ? "bg-primary/10 text-primary font-semibold"
-                      : section.index === null
-                        ? "text-muted-foreground/50 cursor-default"
-                        : "text-muted-foreground hover:bg-primary/5 hover:text-primary"
-                  }`}
-                >
-                  <span className={`w-1.5 h-1.5 rounded-full ${section.index !== null && currentSlide === section.index ? "bg-primary" : "bg-muted-foreground/30"}`} />
-                  {section.label}
-                </button>
-              ))}
+              {SECTIONS.map((section) => {
+                const isActive = section.path
+                  ? location.pathname === section.path
+                  : section.index !== null && location.pathname === "/" && currentSlide === section.index;
+                const isDisabled = section.index === null && section.path === null;
+
+                return (
+                  <button
+                    key={section.label}
+                    onClick={() => {
+                      if (section.path) {
+                        navigate(section.path);
+                      } else if (section.index !== null) {
+                        if (location.pathname !== "/") {
+                          navigate("/");
+                        }
+                        onNavigate?.(section.index);
+                      }
+                      setMenuOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-3 text-sm transition-colors duration-200 flex items-center gap-3 ${
+                      isActive
+                        ? "bg-primary/10 text-primary font-semibold"
+                        : isDisabled
+                          ? "text-muted-foreground/50 cursor-default"
+                          : "text-muted-foreground hover:bg-primary/5 hover:text-primary"
+                    }`}
+                  >
+                    <span className={`w-1.5 h-1.5 rounded-full ${isActive ? "bg-primary" : "bg-muted-foreground/30"}`} />
+                    {section.label}
+                  </button>
+                );
+              })}
             </div>
           )}
         </div>
