@@ -8,7 +8,7 @@ import CTASlide from "@/components/sections/CTASlide";
 import Footer from "@/components/sections/Footer";
 import SlideNavigation from "@/components/SlideNavigation";
 
-const TOTAL_SLIDES = 4;
+const TOTAL_SLIDES = 5;
 
 const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,25 +24,17 @@ const Index = () => {
   const renderSlide = () => {
     switch (currentSlide) {
       case 0:
-        return (
-          <div>
-            <HeroSlide onLogoClick={goToNext} />
-            <AboutSlide />
-          </div>
-        );
+        return <HeroSlide onLogoClick={goToNext} />;
       case 1:
-        return <FeaturesSlide />;
+        return <AboutSlide />;
       case 2:
-        return <VisionSlide />;
+        return <FeaturesSlide />;
       case 3:
+        return <VisionSlide />;
+      case 4:
         return <CTASlide />;
       default:
-        return (
-          <div>
-            <HeroSlide onLogoClick={goToNext} />
-            <AboutSlide />
-          </div>
-        );
+        return <HeroSlide onLogoClick={goToNext} />;
     }
   };
 
@@ -50,6 +42,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header currentSlide={currentSlide} onNavigate={setCurrentSlide} />
       <main className="relative">
+        {/* Show navigation arrows only after first slide */}
         {currentSlide > 0 && (
           <SlideNavigation
             currentSlide={currentSlide}
