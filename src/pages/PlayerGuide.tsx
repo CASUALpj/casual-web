@@ -185,7 +185,7 @@ const PlayerGuide = () => {
                     <AccordionContent className="text-foreground/80 text-sm space-y-2">
                       <ul className="list-disc list-inside space-y-1">
                         <li>50 levels with gated progression.</li>
-                        <li>Difficulty scales every 10 levels: 1.0× → 1.1× → 1.2× → 1.3× → 1.4× → 1.5×.</li>
+                        <li>Difficulty scales every 10 levels.</li>
                         <li>Bosses every 10 levels.</li>
                         <li>All powerups are permanent within a level.</li>
                         <li>Progress capped at 5 new levels per day (resets with daily login).</li>
