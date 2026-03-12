@@ -172,8 +172,8 @@ const PlayerGuide = () => {
                     <AccordionTrigger className="text-sm font-semibold text-foreground/90 hover:no-underline py-3">Survival Mechanics</AccordionTrigger>
                     <AccordionContent className="text-foreground/80 text-sm space-y-2">
                       <ul className="list-disc list-inside space-y-1">
-                        <li>Enemies scale: 3 + wave × 1.5 per wave.</li>
-                        <li>At wave 12+, basic/tank enemies slow 40% and fast enemy spawn drops to 12%.</li>
+                        <li>Each wave throws more enemies at you than the last.</li>
+                        <li>In later waves, slower enemies get even slower and fast enemies appear less often.</li>
                         <li>Most upgrades expire after 2 waves (exceptions: Extra Life, Burn, Faster Shots are permanent).</li>
                         <li>Upgrade screen has an 8-second auto-select timer.</li>
                       </ul>
