@@ -1,11 +1,19 @@
 
 
-## Plan: Update Features Section Text
+## Plan: Install Vercel Analytics
 
-Two text changes in the first feature card, applied to both `Features.tsx` and `FeaturesSlide.tsx`:
+Install `@vercel/analytics` and `@vercel/speed-insights` packages and add them to your app's root component. This is a minimal, safe change.
 
-1. **Title**: "Classic Games, Web3 Rewards" → "Classic Games, Web3 Benefits"
-2. **Description**: "Play familiar games you love while earning blockchain-powered rewards and assets." → "Play familiar games you love while enjoying blockchain powered systems."
+### Steps
 
-Four edits total (title + description in each of the two files).
+1. **Add dependencies** to `package.json`: `@vercel/analytics` and `@vercel/speed-insights`
+
+2. **Update `src/App.tsx`** — Import and render both components:
+   ```tsx
+   import { Analytics } from '@vercel/analytics/react';
+   import { SpeedInsights } from '@vercel/speed-insights/react';
+   ```
+   Add `<Analytics />` and `<SpeedInsights />` alongside your existing app content.
+
+That's it — two lines of imports and two self-closing components. After deploying to Vercel, analytics will appear in your Vercel dashboard automatically.
 
