@@ -25,6 +25,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/one-pager" element={<OnePager />} />
           <Route path="/guide" element={<PlayerGuide />} />
+          <Route path="/guide/tap-race" element={<GuideTapRace />} />
+          <Route path="/guide/run-it" element={<GuideRunIt />} />
+          <Route path="/guide/wave-battle" element={<GuideWaveBattle />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
