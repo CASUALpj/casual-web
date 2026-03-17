@@ -1,10 +1,11 @@
 
 
-## Plan: Update One Pager Last Paragraph
+## Plan: Update Features Section Text
 
-**Change**: In `src/pages/OnePager.tsx`, replace the last paragraph (line 31-33) starting with "At CASUAL we don't..." with:
+Two text changes in the first feature card, applied to both `Features.tsx` and `FeaturesSlide.tsx`:
 
-> "We don't push tokens before fun—we focus on real player engagement first— friendly games, low learning curve and absolutely no blockchain friction during gameplay, ensuring the fun sticks."
+1. **Title**: "Classic Games, Web3 Rewards" → "Classic Games, Web3 Benefits"
+2. **Description**: "Play familiar games you love while earning blockchain-powered rewards and assets." → "Play familiar games you love while enjoying blockchain powered systems."
 
-Single line edit in `src/pages/OnePager.tsx`.
+Four edits total (title + description in each of the two files).
 

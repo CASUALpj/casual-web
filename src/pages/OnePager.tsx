@@ -28,7 +28,7 @@ const OnePager = () => {
             </p>
 
             <p className="text-center">
-              At CASUAL we don't push tokens before fun, we focus on real player engagement first— friendly games, low learning curve and absolutely no blockchain friction during gameplay, ensuring the fun sticks.
+              We don't push tokens before fun—we focus on real player engagement first— friendly games, low learning curve and absolutely no blockchain friction during gameplay, ensuring the fun sticks.
             </p>
           </div>
         </div>
