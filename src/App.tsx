@@ -8,6 +8,9 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import Index from "./pages/Index";
 import OnePager from "./pages/OnePager";
 import PlayerGuide from "./pages/PlayerGuide";
+import GuideTapRace from "./pages/GuideTapRace";
+import GuideRunIt from "./pages/GuideRunIt";
+import GuideWaveBattle from "./pages/GuideWaveBattle";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
