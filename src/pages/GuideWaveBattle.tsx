@@ -29,7 +29,7 @@ const GuideWaveBattle = () => {
               <div className="text-foreground/80 text-sm space-y-2">
                 <p><strong className="text-primary">Survival:</strong> Endless waves. See how far you can go. Points for boss kills and new personal best waves.</p>
                 <p><strong className="text-primary">Levels:</strong> 50 discrete arenas with sequential progression. Pick 1 of 3 permanent powerups per level.</p>
-                <p><strong className="text-primary">Challenge Mode:</strong> 6-player competitive lobbies.</p>
+                <p><strong className="text-primary">Challenge Mode:</strong> 10-player competitive lobbies.</p>
                 <p><strong className="text-primary">Leaderboard:</strong> Global rankings by best wave/kills.</p>
               </div>
             </section>
@@ -79,8 +79,8 @@ const GuideWaveBattle = () => {
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Challenge Mode</h2>
               <div className="text-foreground/80 text-sm space-y-3">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>6-player, 6-hour lobby structure.</li>
-                  <li>New players cannot join within the last 5 minutes.</li>
+                  <li>10-player, 6-hour lobby structure.</li>
+                  <li>New players cannot join within the last 30 minutes.</li>
                 </ul>
                 <p className="font-semibold text-foreground/90">Rankings determined by:</p>
                 <ol className="list-decimal list-inside space-y-1 ml-2">
@@ -89,7 +89,7 @@ const GuideWaveBattle = () => {
                   <li>Earliest finish time (second tiebreaker)</li>
                 </ol>
                 <p>Top 3 earn points: 3 / 2 / 1.</p>
-                <p>Winner determination triggers when all 6 players finish, or when the timer expires.</p>
+                <p>Winner determination triggers when all 10 players finish, or when the timer expires.</p>
               </div>
             </section>
           </div>

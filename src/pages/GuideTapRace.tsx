@@ -37,7 +37,7 @@ const GuideTapRace = () => {
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Lobby Rules</h2>
               <div className="text-foreground/80 text-sm space-y-2">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Max 6 players per lobby.</li>
+                  <li>Max 10 players per lobby.</li>
                   <li>All players must mark themselves <strong>Ready</strong> to start.</li>
                 </ul>
                 <p className="font-semibold text-foreground/90 mt-2">Auto-start triggers when:</p>
