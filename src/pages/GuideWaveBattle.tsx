@@ -90,10 +90,6 @@ const GuideWaveBattle = () => {
                 </ol>
                 <p>Top 3 earn points: 3 / 2 / 1.</p>
                 <p>Winner determination triggers when all 6 players finish, or when the timer expires.</p>
-                <div className="mt-3 p-3 bg-muted/50 rounded-lg border border-border/30">
-                  <p className="text-sm font-semibold text-primary mb-1">💰 Staking</p>
-                  <p className="text-sm">Challenge lobbies require an on-chain stake to enter. Join a lobby (or one is auto-created), stake crypto via your connected wallet, and play when ready. Winner receives the pot minus platform fees. Pending (unstaked) players are filtered from active lobby views and final rankings.</p>
-                </div>
               </div>
             </section>
           </div>

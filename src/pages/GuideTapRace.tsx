@@ -56,7 +56,7 @@ const GuideTapRace = () => {
             <section className="border border-border/50 rounded-lg p-6 bg-card/30">
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Points Rewards</h2>
               <div className="text-foreground/80 text-sm space-y-2">
-                <p><strong>Stakes mode:</strong> 1st = 3 pts, 2nd = 2 pts, 3rd = 1 pt</p>
+                <p><strong>Online mode:</strong> 1st = 3 pts, 2nd = 2 pts, 3rd = 1 pt</p>
                 <p><strong>Points mode:</strong> 1st = 2 pts, 2nd = 1 pt, 3rd = 1 pt</p>
               </div>
             </section>
