@@ -79,8 +79,8 @@ const GuideWaveBattle = () => {
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Challenge Mode</h2>
               <div className="text-foreground/80 text-sm space-y-3">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>10-player, 6-hour lobby structure.</li>
-                  <li>New players cannot join within the last 30 minutes.</li>
+                  <li>10-player, 30-minute lobby structure.</li>
+                  <li>New players cannot join within the last 4 minutes.</li>
                 </ul>
                 <p className="font-semibold text-foreground/90">Rankings determined by:</p>
                 <ol className="list-decimal list-inside space-y-1 ml-2">
