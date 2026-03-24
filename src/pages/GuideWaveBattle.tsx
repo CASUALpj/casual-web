@@ -89,7 +89,7 @@ const GuideWaveBattle = () => {
                   <li>Earliest finish time (second tiebreaker)</li>
                 </ol>
                 <p>Top 3 earn points: 3 / 2 / 1.</p>
-                <p>Winner determination triggers when all 6 players finish, or when the timer expires.</p>
+                <p>Winner determination triggers when all 10 players finish, or when the timer expires.</p>
               </div>
             </section>
           </div>

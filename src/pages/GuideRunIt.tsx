@@ -62,7 +62,7 @@ const GuideRunIt = () => {
                   <li>Earliest finish time (second tiebreaker)</li>
                 </ol>
                 <p>Winner gets 3 points + distance recorded on the challenge leaderboard.</p>
-                <p>Winner determination triggers when all 6 players finish, or when the timer expires.</p>
+                <p>Winner determination triggers when all 10 players finish, or when the timer expires.</p>
               </div>
             </section>
           </div>
