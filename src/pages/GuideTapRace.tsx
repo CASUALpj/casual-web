@@ -27,8 +27,7 @@ const GuideTapRace = () => {
             <section className="border border-border/50 rounded-lg p-6 bg-card/30">
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Modes</h2>
               <div className="text-foreground/80 text-sm space-y-2">
-                <p><strong className="text-primary">Online → Stakes:</strong> Stake crypto on-chain. Race 6 players. Winner takes the pot.</p>
-                <p><strong className="text-primary">Online → Points:</strong> Free-to-play multiplayer. Same lobby rules, no staking required.</p>
+                <p><strong className="text-primary">Online → Points:</strong> Free-to-play multiplayer. Same lobby rules.</p>
                 <p><strong className="text-primary">Practice:</strong> Race against bots locally. No rewards.</p>
               </div>
             </section>
@@ -43,13 +42,13 @@ const GuideTapRace = () => {
                 </ul>
                 <p className="font-semibold text-foreground/90 mt-2">Auto-start triggers when:</p>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li>All stakers are ready (10s countdown)</li>
+                  <li>All players are ready (10s countdown)</li>
                   <li>Max players reached</li>
                   <li>50% ready after 2 minutes</li>
                   <li>10-minute timeout (force start)</li>
                 </ul>
                 <p>Lobby force-closes at 11 minutes.</p>
-                <p>If you're the only staker, you can emergency withdraw your stake at the 10th minute.</p>
+                
               </div>
             </section>
 
@@ -57,7 +56,7 @@ const GuideTapRace = () => {
             <section className="border border-border/50 rounded-lg p-6 bg-card/30">
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Points Rewards</h2>
               <div className="text-foreground/80 text-sm space-y-2">
-                <p><strong>Stakes mode:</strong> 1st = 3 pts, 2nd = 2 pts, 3rd = 1 pt</p>
+                <p><strong>Online mode:</strong> 1st = 3 pts, 2nd = 2 pts, 3rd = 1 pt</p>
                 <p><strong>Points mode:</strong> 1st = 2 pts, 2nd = 1 pt, 3rd = 1 pt</p>
               </div>
             </section>

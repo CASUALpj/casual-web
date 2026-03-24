@@ -29,7 +29,7 @@ const GuideWaveBattle = () => {
               <div className="text-foreground/80 text-sm space-y-2">
                 <p><strong className="text-primary">Survival:</strong> Endless waves. See how far you can go. Points for boss kills and new personal best waves.</p>
                 <p><strong className="text-primary">Levels:</strong> 50 discrete arenas with sequential progression. Pick 1 of 3 permanent powerups per level.</p>
-                <p><strong className="text-primary">Challenge Mode:</strong> 6-player stake-based lobbies.</p>
+                <p><strong className="text-primary">Challenge Mode:</strong> 6-player competitive lobbies.</p>
                 <p><strong className="text-primary">Leaderboard:</strong> Global rankings by best wave/kills.</p>
               </div>
             </section>
@@ -90,10 +90,6 @@ const GuideWaveBattle = () => {
                 </ol>
                 <p>Top 3 earn points: 3 / 2 / 1.</p>
                 <p>Winner determination triggers when all 6 players finish, or when the timer expires.</p>
-                <div className="mt-3 p-3 bg-muted/50 rounded-lg border border-border/30">
-                  <p className="text-sm font-semibold text-primary mb-1">💰 Staking</p>
-                  <p className="text-sm">Challenge lobbies require an on-chain stake to enter. Join a lobby (or one is auto-created), stake crypto via your connected wallet, and play when ready. Winner receives the pot minus platform fees. Pending (unstaked) players are filtered from active lobby views and final rankings.</p>
-                </div>
               </div>
             </section>
           </div>

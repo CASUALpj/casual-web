@@ -28,7 +28,7 @@ const GuideRunIt = () => {
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Modes</h2>
               <div className="text-foreground/80 text-sm space-y-2">
                 <p><strong className="text-primary">Free Run:</strong> Solo endless runner. Earn points based on how far you run vs. the daily target distance.</p>
-                <p><strong className="text-primary">Challenge Mode:</strong> 6-player stake-based lobbies. Compete for the longest distance.</p>
+                <p><strong className="text-primary">Challenge Mode:</strong> 6-player competitive lobbies. Compete for the longest distance.</p>
                 <p><strong className="text-primary">Leaderboard:</strong> View global rankings.</p>
               </div>
             </section>
@@ -52,7 +52,7 @@ const GuideRunIt = () => {
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Challenge Mode</h2>
               <div className="text-foreground/80 text-sm space-y-3">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Lobbies last 6 hours with up to 6 stakers.</li>
+                  <li>Lobbies last 6 hours with up to 6 players.</li>
                   <li>New players cannot join within the last 5 minutes.</li>
                 </ul>
                 <p className="font-semibold text-foreground/90">Rankings determined by:</p>
@@ -63,10 +63,6 @@ const GuideRunIt = () => {
                 </ol>
                 <p>Winner gets 3 points + distance recorded on the challenge leaderboard.</p>
                 <p>Winner determination triggers when all 6 players finish, or when the timer expires.</p>
-                <div className="mt-3 p-3 bg-muted/50 rounded-lg border border-border/30">
-                  <p className="text-sm font-semibold text-primary mb-1">💰 Staking</p>
-                  <p className="text-sm">Challenge lobbies require an on-chain stake to enter. Join a lobby (or one is auto-created), stake crypto via your connected wallet, and play when ready. Winner receives the pot minus platform fees. Pending (unstaked) players are filtered from active lobby views and final rankings.</p>
-                </div>
               </div>
             </section>
           </div>
