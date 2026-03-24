@@ -27,8 +27,7 @@ const GuideTapRace = () => {
             <section className="border border-border/50 rounded-lg p-6 bg-card/30">
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Modes</h2>
               <div className="text-foreground/80 text-sm space-y-2">
-                <p><strong className="text-primary">Online → Stakes:</strong> Stake crypto on-chain. Race 6 players. Winner takes the pot.</p>
-                <p><strong className="text-primary">Online → Points:</strong> Free-to-play multiplayer. Same lobby rules, no staking required.</p>
+                <p><strong className="text-primary">Online → Points:</strong> Free-to-play multiplayer. Same lobby rules.</p>
                 <p><strong className="text-primary">Practice:</strong> Race against bots locally. No rewards.</p>
               </div>
             </section>
