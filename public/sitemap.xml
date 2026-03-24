@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemfor am.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://casualpj.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://casualpj.com/one-pager</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://casualpj.com/guide</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://casualpj.com/guide/tap-race</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://casualpj.com/guide/run-it</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://casualpj.com/guide/wave-battle</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
