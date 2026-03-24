@@ -42,7 +42,7 @@ const GuideTapRace = () => {
                 </ul>
                 <p className="font-semibold text-foreground/90 mt-2">Auto-start triggers when:</p>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li>All stakers are ready (10s countdown)</li>
+                  <li>All players are ready (10s countdown)</li>
                   <li>Max players reached</li>
                   <li>50% ready after 2 minutes</li>
                   <li>10-minute timeout (force start)</li>
