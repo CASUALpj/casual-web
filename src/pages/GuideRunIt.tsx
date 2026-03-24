@@ -52,7 +52,7 @@ const GuideRunIt = () => {
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Challenge Mode</h2>
               <div className="text-foreground/80 text-sm space-y-3">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Lobbies last 6 hours with up to 6 stakers.</li>
+                  <li>Lobbies last 6 hours with up to 6 players.</li>
                   <li>New players cannot join within the last 5 minutes.</li>
                 </ul>
                 <p className="font-semibold text-foreground/90">Rankings determined by:</p>
