@@ -29,7 +29,7 @@ const GuideWaveBattle = () => {
               <div className="text-foreground/80 text-sm space-y-2">
                 <p><strong className="text-primary">Survival:</strong> Endless waves. See how far you can go. Points for boss kills and new personal best waves.</p>
                 <p><strong className="text-primary">Levels:</strong> 50 discrete arenas with sequential progression. Pick 1 of 3 permanent powerups per level.</p>
-                <p><strong className="text-primary">Challenge Mode:</strong> 6-player competitive lobbies.</p>
+                <p><strong className="text-primary">Challenge Mode:</strong> 10-player competitive lobbies.</p>
                 <p><strong className="text-primary">Leaderboard:</strong> Global rankings by best wave/kills.</p>
               </div>
             </section>
