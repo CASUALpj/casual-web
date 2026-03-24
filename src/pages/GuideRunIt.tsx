@@ -28,7 +28,7 @@ const GuideRunIt = () => {
               <h2 className="text-lg font-display font-semibold text-primary mb-4">Modes</h2>
               <div className="text-foreground/80 text-sm space-y-2">
                 <p><strong className="text-primary">Free Run:</strong> Solo endless runner. Earn points based on how far you run vs. the daily target distance.</p>
-                <p><strong className="text-primary">Challenge Mode:</strong> 6-player competitive lobbies. Compete for the longest distance.</p>
+                <p><strong className="text-primary">Challenge Mode:</strong> 10-player competitive lobbies. Compete for the longest distance.</p>
                 <p><strong className="text-primary">Leaderboard:</strong> View global rankings.</p>
               </div>
             </section>
