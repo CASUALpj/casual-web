@@ -48,7 +48,7 @@ const GuideTapRace = () => {
                   <li>10-minute timeout (force start)</li>
                 </ul>
                 <p>Lobby force-closes at 11 minutes.</p>
-                <p>If you're the only staker, you can emergency withdraw your stake at the 10th minute.</p>
+                
               </div>
             </section>
 
